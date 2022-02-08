@@ -6,7 +6,6 @@ import Calculatrice from './components/Calculatrice.vue';
 </script>
 
 <template>
-  <!-- <HelloWorld/> -->
   <Calculatrice/>
 </template>
 

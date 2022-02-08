@@ -1,5 +1,5 @@
 <template>
-<h3>Liste Legume</h3>
+<h3>Le forme</h3>
   <div>Mon forme</div>
   
   <form v-if="afficher">

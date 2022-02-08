@@ -1,8 +1,9 @@
 <template>
 
 
-  <img alt="Image" src={{listeImage[i]}}>
-  <button v-on:click="next"></button>
+  <img alt="Image" :src="listeImage[numer]">
+  <button v-on:click="next_left"> [- suivante</button>
+  <button v-on:click="next_right">suivante -></button>
 </template>
 
 <script>
@@ -10,22 +11,23 @@
     export default defineComponent({
         data: () => {
             return {
-                numerosImage: 0,
-                listeImage: ["../img/1.png","../img/2.png","../img/3.png","../img/4.png","../img/5.png","../img/6.png"],
-                monImage : listeImage[i]
+                i: 0,
+                listeImage: ["../assets/img/1.png","../assets/img/2.png","../assets/img/3.png","../assets/img/4.png","../assets/img/5.png","../assets/img/6.png"]
             }
         },
         methods:{
             next_right: function (){
-                this.numerosImage ++;
-                if(this.numerosImage >= this.listeImage.length()){
-                    this.numerosImage =0;
+                console.log(this.listeImage[this.i]);
+                this.i ++;
+                if(this.i >= this.listeImage.length){
+                    this.i =0;
                 }
             },
             next_left: function (){
-                this.numerosImage --;
-                if(this.numerosImage < 0){
-                    this.numerosImage = this.listeImage.length();
+                console.log(this.listeImage[this.i]);
+                this.i --;
+                if(this.i < 0){
+                    this.i = this.listeImage.length-1;
                 }
             }
         }
