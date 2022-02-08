@@ -1,9 +1,10 @@
 <template>
 
-
-  <img alt="Image" :src="listeImage[numer]">
-  <button v-on:click="next_left"> [- suivante</button>
-  <button v-on:click="next_right">suivante -></button>
+    <div>
+        <img alt="Image" :src="listeImage[numer]">
+        <button v-on:click="next_left"> [- suivante</button>
+        <button v-on:click="next_right">suivante -></button>
+    </div>
 </template>
 
 <script>

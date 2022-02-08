@@ -9,6 +9,7 @@
     <p>adresse :<input id="adresse" v-model="adresse" name="adresse"></p>
     <button v-on:click="checkForm">Valider</button>
   </form>
+  <div v-else>Félicitations, vous êtes inscrits</div>
 </template>
 
 <script>
@@ -30,7 +31,6 @@
           alert("Il manque une ou plusieur information");
         }else{
           this.afficher = false;
-          alert("Félicitations, vous êtes inscrits");
         }
       }
 
