@@ -1,7 +1,8 @@
 <template>
 
     <div>
-        <img alt="Image" :src="listeImage[numer]">
+        <!-- <img src="../assets/img/1.png"> -->
+        <img alt="Image" :src="listeImage[i]">
         <button v-on:click="next_left"> [- suivante</button>
         <button v-on:click="next_right">suivante -></button>
     </div>
@@ -13,7 +14,7 @@
         data: () => {
             return {
                 i: 0,
-                listeImage: ["../assets/img/1.png","../assets/img/2.png","../assets/img/3.png","../assets/img/4.png","../assets/img/5.png","../assets/img/6.png"]
+                listeImage: ["../../assets/img/1.png","../assets/img/2.png","../assets/img/3.png","../assets/img/4.png","../assets/img/5.png","../assets/img/6.png"]
             }
         },
         methods:{
