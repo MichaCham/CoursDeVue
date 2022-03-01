@@ -33,7 +33,6 @@
           this.afficher = false;
         }
       }
-
     }
   })
 </script>
